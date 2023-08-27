@@ -23,7 +23,7 @@ config.color_schemes = {
 
 config.color_scheme = 'my theme'
 
-config.font = wezterm.font("Fira Code Nerd Font Mono", { weight = 'Regular'})
+config.font = wezterm.font("Fira Code", { weight = 'Medium'})
 
 config.default_cursor_style = 'BlinkingBlock'
 config.cursor_blink_rate = 600
