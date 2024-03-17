@@ -30,7 +30,7 @@ vim.keymap.set('v', '<leader>P', '"+P')
 -- Buffer Manipulation
 vim.keymap.set('n', '<tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-tab>', ':bprevious<CR>')
-vim.keymap.set('n', '<leader>q', ':bprevious | bd # <CR>!')
+vim.keymap.set('n', '<leader>q', ':bprevious | bd # ! <CR>')
 
 -- Window Manipulation
 
@@ -45,7 +45,7 @@ vim.keymap.set('n', '<C-j>', require('smart-splits').move_cursor_down)
 vim.keymap.set('n', '<C-k>', require('smart-splits').move_cursor_up)
 vim.keymap.set('n', '<C-l>', require('smart-splits').move_cursor_right)
 -- swapping buffers between windows
-vim.keymap.set('n', '<leader><leader>h', require('smart-splits').swap_buf_left)
-vim.keymap.set('n', '<leader><leader>j', require('smart-splits').swap_buf_down)
-vim.keymap.set('n', '<leader><leader>k', require('smart-splits').swap_buf_up)
-vim.keymap.set('n', '<leader><leader>l', require('smart-splits').swap_buf_right)
+vim.keymap.set('n', '<leader><S-h>', require('smart-splits').swap_buf_left)
+vim.keymap.set('n', '<leader><S-j>', require('smart-splits').swap_buf_down)
+vim.keymap.set('n', '<leader><S-k>', require('smart-splits').swap_buf_up)
+vim.keymap.set('n', '<leader><S-l>', require('smart-splits').swap_buf_right)

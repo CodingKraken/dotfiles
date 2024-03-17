@@ -8,7 +8,7 @@ require('nvim-treesitter.parsers').get_parser_configs().asm = {
 
 require'nvim-treesitter.configs'.setup {
 	-- A list of parser names, or "all"
-	ensure_installed = { "asm", "c", "cpp", "lua", "rust", "python", "vim", "javascript", "make"},
+	ensure_installed = { "asm", "c", "cpp", "lua", "rust", "python", "vim", "javascript", "latex", "make" },
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
 	sync_install = false,

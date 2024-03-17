@@ -7,6 +7,7 @@ require('lualine').setup {
     	disabled_filetypes = {
 			statusline = {
 				"NvimTree",
+				"neo-tree",
 			},
 			tabline = {
 				"NvimTree",

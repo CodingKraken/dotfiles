@@ -15,9 +15,17 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'EdenEast/nightfox.nvim'
 	use 'Shatur/neovim-ayu'
-	use 'nvim-tree/nvim-tree.lua'
-	use 'nvim-tree/nvim-web-devicons'
 	use 'nvim-lualine/lualine.nvim'
+	use {
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+    	requires = {
+      		"nvim-lua/plenary.nvim",
+      		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      		"MunifTanjim/nui.nvim",
+       		"3rd/image.nvim",
+		}
+  	}
 	use 'nvim-treesitter/nvim-treesitter'
 	use {
 		'nvim-telescope/telescope.nvim',
@@ -33,6 +41,8 @@ return require('packer').startup(function(use)
 		'neovim/nvim-lspconfig'
 	}
 	use 'mrjones2014/smart-splits.nvim'
+	use 'catppuccin/nvim'
+	use 'lervag/vimtex'
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
