@@ -6,22 +6,17 @@ local act = wezterm.action
 local config = {}
 helpers.apply_to_config(config)
 
-
 -- initial setup
+config.default_gui_startup_args = {'start', '--always-new-process'}
 config.initial_cols = 140
 config.initial_rows = 35
+config.font_size = 12.0
 config.enable_tab_bar = false
+config.default_prog = { '/usr/bin/bash', '-i' }
+config.enable_wayland = true
 
 -- theme configuration
-local my_theme = wezterm.color.get_builtin_schemes()['BlulocoDark']
-my_theme.cursor_bg = 'silver'
-my_theme.cursor_border = 'silver'
-
-config.color_schemes = {
-	['my theme'] = my_theme
-}
-
-config.color_scheme = 'my theme'
+config.color_scheme = 'Gruvbox dark, pale (base16)'
 
 config.font = wezterm.font("Fira Code Nerd Font Mono", { weight = 'Medium'})
 config.default_cursor_style = 'BlinkingBlock'
