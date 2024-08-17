@@ -1,0 +1,127 @@
+@define-color bg_bar       #1D2021;
+@define-color bg_main      #32302F;
+@define-color bg_active    #A7C080;
+@define-color bg_hover     #425D47;
+
+@define-color border_main  #A7C080;
+
+@define-color content_main #EEEEEE;
+
+@define-color blue         #458588;
+@define-color green        #A7C080;
+@define-color yellow       #DBBC7F;
+@define-color red          #E67E80;
+
+* {
+    font-family: 'Iosevka Nerd Font', sans-serif;
+    font-size: 14;
+    min-height: 0;
+	font-weight: bold;
+}
+
+window#waybar {
+    background: @bg_bar;
+    color: @content_main;
+}
+
+#window {
+    margin: 5px;
+    padding: 0 10px;
+    background-color: @bg_main;
+    border: 1px solid @border_main;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#system {
+    margin: 5px;
+    padding: 0 10px;
+    background-color: @bg_main;
+    border: 1px solid @border_main;
+	margin-left: 2.5px;
+	margin-right: 2.5px;
+}
+
+#hardware {
+    margin: 5px;
+    padding: 0 10px;
+    background-color: @bg_main;
+    border: 1px solid @border_main;
+    border-radius: 15px 0px 0px 15px;
+	margin-right: 2.5px;
+	margin-left: 10px;
+}
+
+#clock {
+    margin: 5px;
+    padding: 0 10px;
+    background-color: @bg_main;
+    border: 1px solid @border_main;
+    border-radius: 0px 5px 5px 0px;
+	margin-left: 2.5px;
+}
+
+#tray
+
+#window {
+    font-weight: bold;
+}
+
+#workspaces {
+    margin-right: 10px;
+	background-color: @bg_main;
+    font-weight: bold;
+}
+
+#workspaces button {
+	border: 1.5px solid @bg_bar;
+	border-radius: 0;
+    color: @content_main;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+	border: 1.5px solid @bg_bar;
+	border-radius: 0;
+	background: @border_main;
+	color: @bg_bar;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.focused {
+	border: 1.5px solid @bg_bar;
+	border-radius: 0;
+    background-color: @bg_active;
+}
+
+#workspaces button:hover {
+	border: 1.5px solid @bg_bar;
+	border-radius: 0;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: @bg_hover;
+    color: @content_main;
+}
+
+#network.disconnected {
+	color: @red;
+}
+
+#battery.warning {
+	color: @yellow;
+}
+
+#battery.critical {
+	color: @red;
+}
+
+#battery.charging, #battery.plugged {
+	color: @green;
+}
+
+#temperature.critical {
+	color: @red;
+}
+
+#keyboard-state {
+    margin-right: 7px;
+}
