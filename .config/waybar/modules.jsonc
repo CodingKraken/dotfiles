@@ -1,0 +1,88 @@
+{
+	"hyprland/workspaces": {
+		"on-click": "activate",
+		"sort-by-number": true,
+		"active-only": false
+	},
+	"hyprland/window": {
+		"format": "{title}",
+		"max-length": 50,
+		"icon": true
+	},
+	"clock": {
+		"format": "{:%R %d/%m/%Y}",
+	},
+	"backlight": {
+        "format": "{icon} {percent}% ",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+		"tooltip-format": "Brightness"
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}% ",
+		"format-bluetooth": " {volume}% ",
+		"format-muted": "󰝟 ",
+		"format-icons": {
+			"headphone": ["󰋋"],
+			"default": ["󰕿", "󰖀", "󰕾"]
+		}
+	},
+	"network": {
+        "format": "{ifname}",
+        "format-wifi": "{icon} {signalStrength}%",
+		"format-icons": { 
+			"wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+		},
+        "format-ethernet": "󰈀 ",
+        "format-disconnected": "󰤫 ",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ifname}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+	},
+	"hyprland/language": {
+        "format": "󰌌 {short}"
+    },
+    "keyboard-state": {
+        "capslock": true,
+        "format": "{icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "cpu": {
+        "format": " {usage}% "
+    },
+    "memory": {
+		//           \/ this is a thin space
+        "format": "  {percentage}% ",
+		"tooltip-format": "{used:0.1f} GiB / {total:0.1f} GiB used"
+    },
+	"battery": {
+		"interval": 10,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		//                  \/ this is a thin space
+		"format": "{icon} {capacity}%",
+		"format-icons": {
+			"default":  ["󱊡", "󱊢", "󱊣"],
+			"charging": ["󱊤", "󱊥", "󱊦"],
+			"plugged": "󱐥",
+			"critical": "󱃍",
+			"charging-critical": "󰢟"
+		},
+	},
+	"tray": {
+		"icon-size": 21,
+		"spacing": 10
+	},
+	"temperature": {
+		//               \/ this is a thin space
+		"format": "{icon} {temperatureC}°C ",
+		"format-icons": ["", "", "", "", ""],
+		"critical-threshold": 80
+	}
+}
