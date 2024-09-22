@@ -1,4 +1,5 @@
 # ~/.bashrc
+# Kraken's bashrc
 
 # if not running interactively, don't do anything
 case $- in
