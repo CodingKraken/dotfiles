@@ -2,8 +2,7 @@
 
 format = """
 [](color_user)\
-$os\
-$username\
+$username$hostname\
 [](bg:color_dirs fg:color_user)\
 $directory\
 [](fg:color_dirs bg:color_git)\
@@ -72,12 +71,19 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+Pop = ""
 
 [username]
 show_always = true
 style_user = "bg:color_user fg:color_fg0"
 style_root = "bg:color_user fg:color_fg0"
-format = '[ $user ]($style)'
+format = '[ $user]($style)'
+
+[hostname]
+ssh_only = false
+style = "bg:color_user fg:color_fg0"
+format = '[@$hostname ]($style)'
+disabled = false
 
 [directory]
 style = "fg:color_fg0 bg:color_dirs"
