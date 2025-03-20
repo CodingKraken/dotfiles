@@ -30,17 +30,12 @@
         {
             "key": "kernel",
             "type": "kernel",
-            "keyColor": "33"
+            "keyColor": "32"
         },
         {
             "key": "desktop",
             "type": "de",
-            "keyColor": "32"
-        },
-        {
-            "key": "term",
-            "type": "terminal",
-            "keyColor": "36"
+            "keyColor": "33"
         },
         {
             "key": "cpu",
@@ -56,7 +51,7 @@
         {
             "key": "uptime",
             "type": "uptime",
-            "keyColor": "33"
+            "keyColor": "36"
         },
         {
             "type": "break"
@@ -64,7 +59,7 @@
         {
             "type": "colors",
             "block": {
-                "range": [9, 15]
+                "range": [1, 6]
             }
         }
     ]
