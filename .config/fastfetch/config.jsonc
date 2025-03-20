@@ -2,46 +2,70 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "type": "small",
-		"color": {
-			"1": "38;5;75",
-			"2": "38;5;84",
-		},
+        "color": {
+            "1": "cyan",
+            "2": "blue"
+        }
+    },
+    "display": {
+        "separator": "",
+        "key": {
+            "width": 10
+        }
     },
     "modules": [
         {
-            "key": "██ Distro",
-            "keyColor": "38;5;210",
-            "type": "os"
+            "type": "title",
+            "color": {
+                "user": "blue",
+                "at": "green",
+                "host": "red"
+            }
         },
         {
-            "key": "██ Kernel",
-            "keyColor": "38;5;84",
-            "type": "kernel"
+            "key": "distro",
+            "type": "os",
+            "keyColor": "31"
         },
         {
-            "key": "██ Shell",
-            "keyColor": "38;5;147",
-            "type": "shell"
+            "key": "kernel",
+            "type": "kernel",
+            "keyColor": "33"
         },
         {
-            "key": "██ Packages",
-            "keyColor": "38;5;200",
-            "type": "packages"
+            "key": "desktop",
+            "type": "de",
+            "keyColor": "32"
         },
         {
-            "key": "██ WM",
-            "keyColor": "38;5;44",
-            "type": "wm"
+            "key": "term",
+            "type": "terminal",
+            "keyColor": "36"
         },
         {
-            "key": "██ CPU",
-            "keyColor": "38;5;75",
-            "type": "cpu"
+            "key": "cpu",
+            "type": "cpu",
+            "keyColor": "34",
+            "format": "{name} ({cores-physical}) core @ {freq-max}"
         },
         {
-            "key": "██ Memory",
-            "keyColor": "38;5;123",
-            "type": "memory"
+            "key": "memory",
+            "type": "memory",
+            "keyColor": "35"
+        },
+        {
+            "key": "uptime",
+            "type": "uptime",
+            "keyColor": "33"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "colors",
+            "block": {
+                "range": [9, 15]
+            }
         }
     ]
 }
