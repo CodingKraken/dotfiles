@@ -1,0 +1,44 @@
+[buildPlans.IosevkaKraken]
+family = "Iosevka Kraken"
+spacing = "normal"
+serifs = "sans"
+noCvSs = false
+exportGlyphNames = true
+
+[buildPlans.IosevkaKraken.variants.design]
+eight = "two-circles"
+zero = "tall-slashed"
+capital-eszet = "rounded-serifless"
+asterisk = "hex-low"
+underscore = "high"
+guillemet = "straight"
+percent = "rings-segmented-slash"
+bar = "natural-slope"
+lig-ltgteq = "slanted"
+lig-equal-chain = "without-notch"
+lig-hyphen-chain = "without-notch"
+
+[buildPlans.IosevkaKraken.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IosevkaKraken.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaKraken.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IosevkaKraken.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
+[buildPlans.IosevkaKraken.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
