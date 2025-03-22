@@ -1,3 +1,5 @@
+#! /usr/bin/env bash
+
 # ~/.bashrc
 # Kraken's bashrc
 
@@ -18,8 +20,8 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
-# starship
-eval "$(starship init bash)"
-
-# fastfetch
+# fetch
 fastfetch
+
+# prompt
+eval "$(starship init bash)"
