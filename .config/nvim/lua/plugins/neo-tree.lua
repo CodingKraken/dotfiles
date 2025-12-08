@@ -6,6 +6,14 @@ return {
         "MunifTanjim/nui.nvim"
     },
     config = function()
+        require('neo-tree').setup({
+            filesystem = {
+                follow_current_file = {
+                    enabled = true
+                }
+            },
+            buffers = { follow_current_file = { enabled = true } }
+        })
         vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
     end
 }

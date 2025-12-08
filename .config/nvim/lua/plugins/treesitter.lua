@@ -7,7 +7,7 @@ return {
 
         configs.setup({
             ensure_installed = { "bash", "c", "lua", "latex", "python",
-                                 "query", "vim", "vimdoc" },
+                                 "query", "vim", "vimdoc", "zig" },
             sync_install = true,
             highlight = { enable = true },
             indent = { enable = true },
