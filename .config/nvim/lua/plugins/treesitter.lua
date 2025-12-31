@@ -2,15 +2,10 @@ return {
     "nvim-treesitter/nvim-treesitter",
     lazy = false,
     build = ":TSUpdate",
+    branch = "main",
     config = function()
-        local configs = require("nvim-treesitter.configs")
-
-        configs.setup({
-            ensure_installed = { "bash", "c", "lua", "latex", "python",
-                                 "query", "vim", "vimdoc", "zig" },
-            sync_install = true,
-            highlight = { enable = true },
-            indent = { enable = true },
+        require("nvim-treesitter").install({
+            "bash", "c", "lua", "latex", "python", "query", "vim", "vimdoc", "zig",
         })
     end
 }

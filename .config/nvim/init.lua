@@ -16,11 +16,12 @@ vim.opt.relativenumber = true
 -- Keybinds
 
 -- set the leader
-vim.keymap.set("n", "<Space>", "<Nop>", { silent=true, remap=false })
+vim.keymap.set("n", "<space>", "<nop>", { silent=true, remap=false })
 
 vim.g.mapleader = " "
 vim.g.localleader = " "
 
-vim.keymap.set("n", "<Leader>ch", ":nohlsearch<CR>")
+-- clear highlights after searches
+vim.keymap.set("n", "<leader>ch", ":nohlsearch<CR>")
 
 require("config.lazy")

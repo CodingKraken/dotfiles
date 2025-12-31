@@ -21,7 +21,7 @@
             "type": "title",
             "color": {
                 "user": "blue",
-                "at": "green",
+                "at": "white",
                 "host": "red"
             }
         },
@@ -48,14 +48,19 @@
             "format": "{name} ({cores-physical}) core @ {freq-max}"
         },
         {
+            "key": "gpu",
+            "type": "gpu",
+            "keyColor": "35"
+        },
+        {
             "key": "memory",
             "type": "memory",
-            "keyColor": "35"
+            "keyColor": "36"
         },
         {
             "key": "uptime",
             "type": "uptime",
-            "keyColor": "36"
+            "keyColor": "37"
         },
         {
             "type": "break"
